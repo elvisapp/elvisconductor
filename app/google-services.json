@@ -1,53 +1,42 @@
 {
   "project_info": {
-    "project_number": "322525158832",
-    "firebase_url": "https://uberclone-a3a0f.firebaseio.com",
-    "project_id": "uberclone-a3a0f",
-    "storage_bucket": "uberclone-a3a0f.appspot.com"
+    "project_number": "477755218191",
+    "firebase_url": "https://rapi-taxi-venezuela-default-rtdb.firebaseio.com",
+    "project_id": "rapi-taxi-venezuela",
+    "storage_bucket": "rapi-taxi-venezuela.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:322525158832:android:aa508fc8f4b4a0d1700a75",
+        "mobilesdk_app_id": "1:477755218191:android:1856fa1bb6c0a731fcc67a",
         "android_client_info": {
-          "package_name": "com.optic.uberclone"
+          "package_name": "com.elvis.cliente"
         }
       },
       "oauth_client": [
         {
-          "client_id": "322525158832-tr81oflk2f3hahm44inkr62pe5ibh4cu.apps.googleusercontent.com",
+          "client_id": "477755218191-ntumd37t1uqbhs9asn884ordceckjul0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.optic.uberclone",
-            "certificate_hash": "0b21c70c9e8f6ff638d127c830b373e633b9eef2"
+            "package_name": "com.elvis.cliente",
+            "certificate_hash": "724733b929a66e184fe1ac94de8a3418f8859eae"
           }
         },
         {
-          "client_id": "322525158832-vvov4lp5fmr3f4e3303hpi0pe2l8s3d4.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.optic.uberclone",
-            "certificate_hash": "4b173291c09334fdf4cc745d672e15f5552e6ded"
-          }
-        },
-        {
-          "client_id": "322525158832-18odlebii7qbu6fidmk9ph66d8ikal1p.apps.googleusercontent.com",
+          "client_id": "477755218191-vuemgi2jn32cbbvod3phga1qhkkg70su.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBsJPBRk_XZgT0YMWHePvwp_Hs8dih3S6A"
-        },
-        {
-          "current_key": "AIzaSyDp_7hUUSY8ep6bVH1-zpRlcE2041qzDks"
+          "current_key": "AIzaSyAfq3VnSv_GCAQndAWjwLh5zU0IzZHirLU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "322525158832-18odlebii7qbu6fidmk9ph66d8ikal1p.apps.googleusercontent.com",
+              "client_id": "477755218191-vuemgi2jn32cbbvod3phga1qhkkg70su.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -56,38 +45,72 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:322525158832:android:341b53e4f4cf44ea700a75",
+        "mobilesdk_app_id": "1:477755218191:android:4fa39f314b9ac560fcc67a",
         "android_client_info": {
-          "package_name": "com.optic.ubercloneconductor"
+          "package_name": "com.elvis.conductor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "322525158832-phegl02nocelp845j6gnam82avmmghu3.apps.googleusercontent.com",
+          "client_id": "477755218191-o9gli2pmutgt0vgup3tj0i1jh9uhsvib.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.optic.ubercloneconductor",
-            "certificate_hash": "0b21c70c9e8f6ff638d127c830b373e633b9eef2"
+            "package_name": "com.elvis.conductor",
+            "certificate_hash": "724733b929a66e184fe1ac94de8a3418f8859eae"
           }
         },
         {
-          "client_id": "322525158832-18odlebii7qbu6fidmk9ph66d8ikal1p.apps.googleusercontent.com",
+          "client_id": "477755218191-vuemgi2jn32cbbvod3phga1qhkkg70su.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBsJPBRk_XZgT0YMWHePvwp_Hs8dih3S6A"
-        },
-        {
-          "current_key": "AIzaSyDp_7hUUSY8ep6bVH1-zpRlcE2041qzDks"
+          "current_key": "AIzaSyAfq3VnSv_GCAQndAWjwLh5zU0IzZHirLU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "322525158832-18odlebii7qbu6fidmk9ph66d8ikal1p.apps.googleusercontent.com",
+              "client_id": "477755218191-vuemgi2jn32cbbvod3phga1qhkkg70su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477755218191:android:ac5b7be402dd39f9fcc67a",
+        "android_client_info": {
+          "package_name": "com.rtv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477755218191-t8m76ir5cmpdd5s1sn382k0bskscglrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rtv",
+            "certificate_hash": "724733b929a66e184fe1ac94de8a3418f8859eae"
+          }
+        },
+        {
+          "client_id": "477755218191-vuemgi2jn32cbbvod3phga1qhkkg70su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfq3VnSv_GCAQndAWjwLh5zU0IzZHirLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477755218191-vuemgi2jn32cbbvod3phga1qhkkg70su.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
