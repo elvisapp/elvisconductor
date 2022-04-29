@@ -59,7 +59,7 @@ import com.elvis.conductor.providers.AuthProvider;
 import com.elvis.conductor.providers.DriversFoundProvider;
 import com.elvis.conductor.providers.GeofireProvider;
 import com.elvis.conductor.providers.TokenProvider;
-import com.optic.ubercloneconductor.utils.CarMoveAnim;
+import com.elvis.conductor.utils.CarMoveAnim;
 
 public class MapDriverActivity extends AppCompatActivity implements OnMapReadyCallback {
 

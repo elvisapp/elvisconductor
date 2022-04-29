@@ -5,7 +5,7 @@ import android.content.Context;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.optic.ubercloneconductor.utils.CompressorBitmapImage;
+import com.elvis.conductor.utils.CompressorBitmapImage;
 
 import java.io.File;
 

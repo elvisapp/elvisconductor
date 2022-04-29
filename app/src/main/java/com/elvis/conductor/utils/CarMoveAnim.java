@@ -1,4 +1,4 @@
-package com.optic.ubercloneconductor.utils;
+package com.elvis.conductor.utils;
 
 import android.animation.ValueAnimator;
 import android.util.Log;

@@ -64,8 +64,8 @@ import com.elvis.conductor.providers.InfoProvider;
 import com.elvis.conductor.providers.NotificationProvider;
 import com.elvis.conductor.providers.TokenProvider;
 import com.elvis.conductor.services.ForegroundService;
-import com.optic.ubercloneconductor.utils.CarMoveAnim;
-import com.optic.ubercloneconductor.utils.DecodePoints;
+import com.elvis.conductor.utils.CarMoveAnim;
+import com.elvis.conductor.utils.DecodePoints;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -278,6 +278,8 @@ public class MapDriverBookingActivity extends AppCompatActivity implements OnMap
         mMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mMapFragment.getMapAsync(this);
 
+        //instancia de botones
+
         mTextViewClientBooking = findViewById(R.id.textViewClientBooking);
         mTextViewEmailClientBooking = findViewById(R.id.textViewEmailClientBooking);
         mTextViewOriginClientBooking = findViewById(R.id.textViewOriginClientBooking);
@@ -293,6 +295,8 @@ public class MapDriverBookingActivity extends AppCompatActivity implements OnMap
         mGoogleApiProvider = new GoogleApiProvider(MapDriverBookingActivity.this);
 
         getClient();
+
+        //acciones de los botones
 
         mButtonStartBooking.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -397,25 +401,21 @@ public class MapDriverBookingActivity extends AppCompatActivity implements OnMap
 
     }
 
-    private void finishBooking() {
-        mClientBookingProvider.updateIdHistoryBooking(mExtraClientId).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                // podemos limpiar todos los datos almacenados en shared preferences
-                mIsFinishBooking = true;
-                mEditor.clear().commit();
-                sendNotification("Viaje finalizado");
-                removeLocation();
-                stopLocation();
-                mGeofireProvider.removeLocation(mAuthProvider.getId());
-                if (mHandler != null) {
-                    mHandler.removeCallbacks(runnable);
-                }
-                calculateRide();
-            }
-        });
 
-    }
+
+        private void finishBooking() {
+            mClientBookingProvider.updateStatus(mExtraClientId, "finish");
+            mClientBookingProvider.updateIdHistoryBooking(mExtraClientId);
+            sendNotification("Viaje finalizado");
+            if (mFusedLocation != null) {
+                mFusedLocation.removeLocationUpdates(mLocationCallback);
+            }
+            mGeofireProvider.removeLocation(mAuthProvider.getId());
+            Intent intent = new Intent(MapDriverBookingActivity.this, CalificationClientActivity.class);
+            intent.putExtra("idClient", mExtraClientId);
+            startActivity(intent);
+            finish();
+        }
 
     private void startBooking() {
         mEditor.putString("status", "start");

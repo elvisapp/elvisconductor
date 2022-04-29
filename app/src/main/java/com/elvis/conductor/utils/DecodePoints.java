@@ -1,4 +1,4 @@
-package com.optic.ubercloneconductor.utils;
+package com.elvis.conductor.utils;
 
 import com.google.android.gms.maps.model.LatLng;
 
